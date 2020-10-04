@@ -1,0 +1,371 @@
+﻿body {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*////////////////TOP NAV BAR////////////////*/
+
+.top-bar {
+    background-color: black;
+    min-height: 40px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+    .top-bar .nav-text {
+        color: #00BCD4;
+        display: block;
+        margin-top: 5px;
+    }
+
+    .top-bar .social {
+        color: #FFF;
+        display: inline-block;
+        padding: 5px;
+        text-decoration: none;
+    }
+
+    .top-bar .tools {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+    }
+
+        .top-bar .tools li {
+            list-style-type: none;
+            display: inline-block;
+        }
+
+            .top-bar .tools li a {
+                display: block;
+                text-decoration: none;
+                color: #fff;
+                padding-left: 15px;
+                padding-top: 5px;
+            }
+
+
+
+
+
+/*CROUSELE START///////////////////////////*/
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 35px;
+    width: 60%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+@media screen and (min-width:768px) {
+    .carousel-caption h3 {
+        font-size: 52px;
+    }
+
+    .carousel-caption p {
+        font-size: 32px;
+    }
+
+    .carousel-caption {
+        padding-bottom: 160px;
+    }
+}
+
+
+/*FOOTER START///////////////////*/
+
+.footer {
+    padding: 50px 0 20px 0;
+    background-color: #35404f;
+    color: #878c94;
+}
+
+    .footer .title {
+        text-align: left;
+        color: #fff;
+        font-size: 25px;
+    }
+
+
+    .footer .social-icon {
+        padding: 0px;
+        margin: 0px;
+    }
+
+        .footer .social-icon a {
+            display: inline-block;
+            color: #fff;
+            font-size: 25px;
+            padding: 5px;
+        }
+
+    .footer .acount-icon a {
+        display: block;
+        color: #fff;
+        font-size: 18px;
+        padding: 5px;
+        text-decoration: none;
+    }
+
+    .footer .acount-icon .fa {
+        margin-right: 25px;
+    }
+
+
+    .footer .category a {
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        padding: 5px 20px;
+        margin: 1px;
+        border-radius: 4px;
+        margin-top: 6px;
+        background-color: black;
+        border: solid 1px #fff;
+    }
+
+    .footer .payment {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+    }
+
+        .footer .payment li {
+            list-style-type: none;
+        }
+
+            .footer .payment li a {
+                text-decoration: none;
+                display: inline-block;
+                color: #fff;
+                float: left;
+                font-size: 25px;
+                padding: 10px 10px;
+            }
+
+/*Registration form*/
+
+{
+    box-sizing: border-box;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+    /* Full-width input fields */
+    .form-container input[type=text], .form-container input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+    }
+
+        /* When the inputs get focus, do something */
+        .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+    /* Set a style for the submit/login button */
+    .form-container .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+        opacity: 0.8;
+    }
+
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+        background-color: red;
+    }
+
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover, .open-button:hover {
+        opacity: 1;
+    }
+
+.form-control {
+    height: 40px;
+    box-shadow: none;
+    color: #969fa4;
+}
+
+    .form-control:focus {
+        border-color: #5cb85c;
+    }
+
+.form-control, .btn {
+    border-radius: 3px;
+}
+
+.signup-form {
+    width: 450px;
+    margin: 0 auto;
+    padding: 30px 0;
+    font-size: 15px;
+}
+
+    .signup-form h2 {
+        color: #636363;
+        margin: 0 0 15px;
+        position: relative;
+        text-align: center;
+    }
+
+        .signup-form h2:before, .signup-form h2:after {
+            content: "";
+            height: 2px;
+            width: 30%;
+            background: #d4d4d4;
+            position: absolute;
+            top: 50%;
+            z-index: 2;
+        }
+
+        .signup-form h2:before {
+            left: 0;
+        }
+
+        .signup-form h2:after {
+            right: 0;
+        }
+
+    .signup-form .hint-text {
+        color: #999;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .signup-form form {
+        color: #999;
+        border-radius: 3px;
+        margin-bottom: 15px;
+        background: #f2f3f7;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+
+    .signup-form .form-group {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .signup-form input[type="checkbox"] {
+        margin-top: 3px;
+    }
+
+    .signup-form .btn {
+        font-size: 16px;
+        font-weight: bold;
+        min-width: 140px;
+        outline: none !important;
+    }
+
+    .signup-form .row div:first-child {
+        padding-right: 10px;
+    }
+
+    .signup-form .row div:last-child {
+        padding-left: 10px;
+    }
+
+    .signup-form a {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+        .signup-form a:hover {
+            text-decoration: none;
+        }
+
+    .signup-form form a {
+        color: #5cb85c;
+        text-decoration: none;
+    }
+
+        .signup-form form a:hover {
+            text-decoration: underline;
+        }
+
+/*image size*/
+div img {
+    width: 250px;
+    height: 250px;
+}
+
+#cart {
+    width: 50px;
+    height: 50px;
+}
+
+.box {
+    background: #dcdcdc;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.mybutton {
+    color: #ffffff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}

@@ -1,0 +1,37 @@
+﻿<div id="customerDetails">
+
+
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+        </div>
+        <div class="col-lg-3">
+            <div id="cartContent">
+                <h2>Delivery Details</h2>
+
+
+
+                @using (Html.BeginForm("Index", "Payment", FormMethod.Post))
+                {          <div class="form-group">
+                    <input type="email" class="form-control" name="Address 1" placeholder="Address 1">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="Address 2" placeholder="Address 2">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="City" placeholder="City">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="State" placeholder="City">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-lg btn-block">Check out</button>
+                </div>
+                }
+            </div>
+        </div>
+        <div id="shoppingCartTotals">
+        </div>
+    </div>
+</div>

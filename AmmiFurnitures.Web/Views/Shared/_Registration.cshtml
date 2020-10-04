@@ -1,0 +1,75 @@
+﻿
+@model AmmiFurnitures.Web.Models.tblUser
+
+<div class="modal fade" id="myModalRegistration" role="dialog">
+    <div class="modal-dialog " style="width:650px;">
+        <!-- Modal content-->
+        <div class="modal-content">
+
+            <div class="signup-form">
+
+                <h2>Register</h2>
+                @using (Html.BeginForm("Register", "Register", FormMethod.Post))
+                {
+                    <div class="form-group">
+                        <div class="row">
+                           <div class="col">
+                                @Html.TextBoxFor(a => a.FirstName, new { @class = "form-control", @placeholder = "FirstName", required = "required" })
+                            </div>
+                            <div class="col">
+                                @Html.TextBoxFor(a => a.LastName, new { @class = "form-control", @placeholder = "LastName", required = "required" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.TextBoxFor(a => a.EmailId, new { @class = "form-control", @placeholder = "Email", required = "required" })
+                    </div>
+                    <div class="form-group">
+                        @Html.TextBoxFor(a => a.Password, new { @class = "form-control", @placeholder = "Password", required = "required" })
+                    </div>
+                    <div class="form-group">
+                        @Html.TextBoxFor(a => a.Password, new { @class = "form-control", @placeholder = "Confirm Password", required = "required" })
+                    </div>
+                    <div class="form-group">
+                        <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+                    </div>
+
+                    <div class="text-center">
+                        Already have an account?
+                        <a href="#" id="myLogin" data-target="#myModalLogin" data-toggle="modal" class="btn btn-primary"> login</a>
+                    </div>
+                }
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        //$('#myLogin').modal('hide');
+
+        //$("#myRegisration").click(function () {
+        //    // show Modal
+        //    $('#myModalLogin').modal('show');
+
+        //});
+
+        // Hide modal on opening another modal
+        $('.close-modal', '#myRegisration').click(function () {
+            $('#myRegisration').modal('show');
+        });
+        $('.close-modal', '#myModalLogin').click(function () {
+            $('#login').modal('hide');
+        });
+
+    });
+
+
+
+
+</script>
