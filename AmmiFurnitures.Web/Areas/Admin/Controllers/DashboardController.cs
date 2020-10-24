@@ -11,6 +11,7 @@ namespace AmmiFurnitures.Web.Areas.Admin.Controllers
         // GET: Admin/Dashboard
         public ActionResult Index()
         {
+            using(AmmiFurnitures.Web.Models.AmmiFurnitureDbEntities)
             return View();
         }
 
